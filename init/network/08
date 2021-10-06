@@ -1,0 +1,9 @@
+Nous pouvons trouver les hébergeurs dans lequel se trouve le site de Slash16 
+grâce à la commande suivante:
+whois slash16.org | grep 'Name Server:' | awk '{print $3}'
+
+Ceci nous renvoie:
+NS-1236.AWSDNS-26.ORG
+NS-144.AWSDNS-18.COM
+NS-686.AWSDNS-21.NET
+NS-1989.AWSDNS-56.CO.UK

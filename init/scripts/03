@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo 'Processus lourd:'
+process=$(ps -eo pmem,pid | tail -n +2 | sort -rnk 1 | head -n 1 | cut -d ' ' -f 4)
+echo $process
+echo '\n'
+read -p 'Tuer le processus ? 1 : ' killp
+if [ $killp -eq 1 ]
+then
+	kill $process
+	echo "kill ok"
+fi

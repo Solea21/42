@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo 'Utilisateurs logués:'
+who | cut -d ' ' -f 1
+echo '\n'
+read -p 'Entrer un utilisateur à supprimer : ' user
+sudo userdel $user

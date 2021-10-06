@@ -1,0 +1,3 @@
+En session graphique: Choisir le nouvel utilisateur dans la session de connexion et entrer le mot de passe associé à cet utilisateur.
+
+En ssh:	ssh <utilisateur>@<ip> et entrer le mot de passe de cet utilisateur.
